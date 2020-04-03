@@ -1,0 +1,67 @@
+
+@import "../../webfonts.ru/import/ptsans.css";
+@import "../../webfonts.ru/import/lobster.css";
+
+body { margin:0px; padding:0px; font-family: Verdana, Arial, Helvetica, sans-serif; background: #2F4F4F ;  }
+
+.row {
+    border:1px;
+    background: #fff ;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+button.b {
+            outline: none;
+            background: Snow; 
+            margin: 0px;
+            padding: 0px; 
+            font-size: 20px; 
+            font-weight: bold; 
+            color: Black; 
+            text-align: center; 
+            border: 0px; 
+            cursor: pointer;
+            
+        }
+        
+.tag {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #588fe5;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin: 0 70px 0 0;
+    text-decoration: none;
+}
+.tag:hover {
+    background-color: #739fe4;
+    text-decoration: none;
+}
+
+.tag:before {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    content: "";
+    display: inline-block;
+    border-radius: 20px;
+    margin: 0 5px 0 0;
+}
+
+.tag:after {
+    display: inline-block;
+    border: 20px solid;
+    border-color: transparent transparent transparent #588fe5;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    content: "";
+}
+
+.tag:hover:after {
+    border-color: transparent transparent transparent #739fe4;
+}
